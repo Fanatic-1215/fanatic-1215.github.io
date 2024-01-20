@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="render" content="webkit">
+    <title>fanatic</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+  
+</head>
+<body>
+
+  <!-- 输入部分 -->
+  <div class="inp">
+    <div class="top-1">
+      <div class="aling">
+        输入区
+      </div>
+      <div class="aling">
+        检查区
+      </div>
+    </div>
+    <div class="aling">
+      <input id="getweek" placeholder="第？周（仅输入数字）" type="text">
+      <button id="inpweek">输入</button>
+      <div id="outputweek" class="output"></div>
+    </div>
+    <div class="aling">
+      <input id="inp1" placeholder="23造价301（输入没课的节数）" type="text">
+      <button id="btn1">输入</button>
+      <div id="output1" class="output"></div>
+    </div>
+    <div class="aling">
+      <input placeholder="23造价302（1-5为1.2节周一至周五）" id="inp2" type="text">
+      <button id="btn2">输入</button>
+      <div id="output2" class="output"></div>
+    </div>
+    <div class="aling">
+      <input placeholder="23造价303（6-10为3.4节周一至周五）" id="inp3" type="text">
+      <button id="btn3">输入</button>
+      <div id="output3" class="output"></div>
+    </div>
+    <div class="aling">
+      <input placeholder="23造价304（11-15为5.6节周一至周五）" id="inp4" type="text">
+      <button id="btn4">输入</button>
+      <div id="output4" class="output"></div>
+    </div>
+    <div class="aling">
+      <input placeholder="23路桥301（16-20为7.8节周一至周五）" id="inp5" type="text">
+      <button id="btn5">输入</button>
+      <div id="output5" class="output"></div>
+    </div>
+    <div class="aling">
+      <input placeholder="23路桥302（节与节之间用空格隔开）" id="inp6" type="text">
+      <button id="btn6">输入</button>
+      <div id="output6" class="output"></div>
+    </div>
+    <div class="aling">
+      <input placeholder="23智建301（例如1 2 3 15 20）" id="inp7" type="text">
+      <button id="btn7">输入</button>
+      <div id="output7" class="output"></div>
+    </div>
+    <div class="aling">
+      <input placeholder="23建筑301" id="inp8" type="text">
+      <button id="btn8">输入</button>
+      <div id="output8" class="output"></div>
+    </div>
+    <div class="aling">
+      <input  placeholder="23建筑302" id="inp9" type="text">
+      <button id="btn9">输入</button>
+      <div id="output9" class="output"></div>
+    </div>
+    <div class="aling">
+      <button class="btn11">一键输入</button>
+      <button id="reset">重置</button>
+      <button class="btn12">生成表格</button>
+    </div>
+
+    
+  </div>
+
+
+
+
+  <!-- 主体结构 -->
+  <div class="outer">
+    <table>
+      <caption class="st">建筑工程学院23级干事值班表(第<span id="week">一</span>周)</caption>
+      <tr>
+        <th class="bac"></th>
+        <th>星期一</th>
+        <th>星期二</th>
+        <th>星期三</th>
+        <th>星期四</th>
+        <th>星期五</th>
+      </tr>
+      <tr>
+        <th>1.2节</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>3.4节</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>5.6节</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>7.8节</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <div style="background-color: #ccc;"  class="timer"></div>
+     
+    </table>
+  </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
